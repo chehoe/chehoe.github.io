@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      WhatMobile &#124; Helping you to discover the mobile landscape
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script type="text/javascript" src="jquery-1.9.1.js" ></script>
+    <script type="text/javascript" src="HermesIndex.js" ></script>
+    <script type="text/javascript" src="PxConverter.js" ></script>
+    <script type="text/javascript" src="FormValidation.js" ></script>
+    <link rel="shortcut icon" href="Assets/favicon.ico"/>
+  </head>
+  <body>
+    <div id="aurora">
+      <a href="index.html">
+        <img id="logo" src="Assets/Logo.gif" alt="logo">
+      </a>
+      <div id="aurorabg">
+      </div>
+    </div>
+
+    <div id="wrapper">
+
+      <div id="navwrapper">
+        <div id="container">
+          <div class="box1">
+            <a href="android.html">
+              <img src="Assets/Android.png" alt="Android">
+              ANDROID
+            </a>
+          </div>
+          <div class="box2">
+            <a href="ios.html">
+              <img src="Assets/Apple.png" alt="Apple">
+              iOS
+            </a>
+          </div>
+          <div class="box3">
+            <a href="wp.html">
+              <img src="Assets/WP.png" alt="Windows">
+              WINDOWS PHONE
+            </a>
+          </div>
+          <div class="box4">
+            <a href="summary.html">
+              <img src="Assets/Summary.png" alt="Summary">
+              SUMMARY
+            </a>
+          </div>
+          <div class="abox5">
+            <a href="about.html">
+              <img src="Assets/InfoColored.png" alt="About">
+              ABOUT
+            </a>
+            <div class="ehorizdividerlink">
+            </div>
+          </div>
+          <span class="stretch">
+          </span>
+        </div>
+      </div>
+          
+      <div class="subheader">
+        <p>
+          About us
+        </p>
+      </div>
+
+      <div class="aboutboxcontainer2">
+        <div class="intro">
+          <h2 class="aboutheader">
+            Hermes.com
+          </h2>
+          <p>
+            Helping you discover the mobile landscape
+          </p>
+        </div>
+        <div class="aboutpic" id="aboutlogo">
+        </div>
+      </div>
+
+      <div class="horizdividersummary"><div class="bottomgradient"></div></div>
+
+      <div class="subheader aboutsubheader">
+        <p>
+          Contact us
+        </p>
+      </div>
+
+      <div id="contactusform">
+        <!--It has to be arranged like this due to inline-block styling (to take away the extra space)!-->
+        <form action="404.html" method="get">
+          <div>
+          <label>Name</label><input type="text" id="nameinput" name="nameinput" placeholder="E.g. John Doe" onblur="check()" onfocus="restore(&#34;nameinput&#34;)">
+          <p class="errormsg"></p></div>
+          <div><label>Email</label><input type="email" name="emailinput" id="emailinput" placeholder="E.g. johndoe@mail.com" onblur="checkEmail()" onfocus="restore(&#34;emailinput&#34;)"><p class="errormsg">Hi</p></div>
+          <p><label>Message</label><textarea name="message" rows="10" cols="40" id="messageinput" placeholder="Write your message here" onblur="checkMessage()" onfocus="restore(&#34;messageinput&#34;)"></textarea></p>
+          <p class="errormsg"></p>
+          <p id="submitbutton"><input type="submit" value="Send" id="submit"/></p>
+        </form>
+      </div>
+
+      <div id="maps">
+        <div id="address">
+          <h3>
+            Northern Hermes Organisation, PLC
+          </h3>
+          <p>
+            90, 1 World Trade Center
+            <br>
+            New York, NY 10006
+          </p>
+        </div>
+        <div id ="frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3024.22750332599!2d-74.01316899999999!3d40.713007999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1bcfbeaa15%3A0x8d0dcf7d3a9bf4b8!2sOne+World+Trade+Center!5e0!3m2!1sen!2ssg!4v1423640408303">
+          </iframe>
+        </div>
+      </div>
+    </div> <!--End of wrapper-->
+    <!--to pass accurate viewport width to jquery-->
+    <div id="currentmedia"></div>
+  </body>
+</html>
